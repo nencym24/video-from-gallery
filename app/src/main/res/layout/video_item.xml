@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/videoitemcard"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Animated Gifs"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:maxLines="1"
+        android:maxLength="26"
+        android:layout_marginStart="@dimen/_70sdp"
+        app:layout_constraintTop_toTopOf="@id/imgCard"
+        app:layout_constraintStart_toStartOf="@id/imgCard"/>
+
+    <TextView
+        android:id="@+id/txtfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="350 videos 2023-Aug-11"
+        android:textColor="#7A7979"
+        android:textSize="@dimen/_9sdp"
+        android:maxLength="26"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@id/txtName"
+        app:layout_constraintTop_toBottomOf="@id/txtName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
